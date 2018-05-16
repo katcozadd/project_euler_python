@@ -3,12 +3,12 @@
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-# n=0
-# for i in xrange(1,10):
-# 	if not i % 3 or not i % 5:
-# 		n = n + i
+n=0
+for i in xrange(1,10):
+	if not i % 3 or not i % 5:
+		n = n + i
 
-# print n
+print n
 
 
 # 2.)
@@ -47,3 +47,17 @@ print a * a - sum(i*i for i in r)
 
 import prime
 print prime.prime(10000)
+
+
+# 5.) 
+# Fizz Buzz
+
+for num in range(1,100):
+    if num % 5 == 0 and num % 3 == 0:
+        print "FizzBuzz"
+    elif num % 3 == 0:
+        print "Fizz"
+    elif num % 5 == 0:
+        print "Buzz"
+    else:
+        print num
